@@ -1,25 +1,26 @@
 {
   "name": "Magic-Mirror-Module-skywriter",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Gesture based module navigator",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kclemen/MMM-skywriter"
+    "url": "git+https://github.com/philthetechie/MMM-skywriter"
   },
   "keywords": [
     "magic mirror",
     "smart mirror",
     "gesture",
+    "sensor",
     "module"
   ],
-  "author": "Kurt Clemens based on on Paul-Vincent Roll",
-  "contributors": "https://github.com/Kclemen/MMM-skywriter/graphs/contributors",
+  "author": "Phil Barton based on Kurt Clemens based on on Paul-Vincent Roll",
+  "contributors": "https://github.com/philthetechie/MMM-skywriter/graphs/contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kclemen/MMM-skywriter/issues"
+    "url": "https://github.com/philthetechie/MMM-skywriter/issues"
   },
-  "homepage": "https://github.com/Kclemen/MMM-skywriter#readme",
+  "homepage": "https://github.com/philthetechie/MMM-skywriter#readme",
   "dependencies": {
     "python-shell": "latest"
-    }
+  }
 }

@@ -1,14 +1,14 @@
 'use strict';
-
 const NodeHelper = require('node_helper');
-const PythonShell = require('python-shell');
 var pythonStarted = false
+let {PythonShell} = require('python-shell')
 
 module.exports = NodeHelper.create({
   
 	python_start: function () {
+
 		const self = this;
-		const pyshell = new PythonShell('modules/' + this.name + '/MMM-skywriter.py', { mode: 'json', args: [JSON.stringify(this.config)]});
+		const pyshell = new PythonShell('modules/' + this.name + '/skywriter_helper.py', { mode: 'json', args: [JSON.stringify(this.config)]});
 		
 		pyshell.on('message', function (message) {
       
@@ -17,8 +17,8 @@ module.exports = NodeHelper.create({
 			}
 			
 			if (message.hasOwnProperty('gesture')){
-			console.log("node_helper_[" + self.name + "] " + message.gesture);
-			self.sendSocketNotification("gesture_observed", message.gesture);
+			console.log("skywriter_gesture[" + self.name + "] " + message.gesture);
+			self.sendSocketNotification("gesture", message.gesture);
 			}
 		});
 		
